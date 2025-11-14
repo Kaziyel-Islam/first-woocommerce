@@ -15,7 +15,7 @@
                             }
                         }
                     }'>
-                    <div class="intro-slide" style="background-image: url(assets/images/demos/demo-4/slider/slide-1.png);">
+                    <div class="intro-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/slider/slide-1.png);">
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
@@ -39,7 +39,7 @@
                         </div><!-- End .intro-content -->
                     </div><!-- End .intro-slide -->
 
-                    <div class="intro-slide" style="background-image: url(assets/images/demos/demo-4/slider/slide-2.png);">
+                    <div class="intro-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/slider/slide-2.png);">
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
@@ -75,7 +75,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/1.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/1.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -87,7 +87,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/2.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/2.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -99,7 +99,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/3.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/3.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -111,7 +111,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/4.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/4.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -123,7 +123,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/5.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/5.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -135,7 +135,7 @@
                             <a href="category.html" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="assets/images/demos/demo-4/cats/6.png" alt="Category image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/6.png" alt="Category image">
                                     </span>
                                 </figure>
 
@@ -153,7 +153,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="banner banner-overlay banner-overlay-light">
                             <a href="#">
-                                <img src="assets/images/demos/demo-4/banners/banner-1.png" alt="Banner">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/banners/banner-1.png" alt="Banner">
                             </a>
 
                             <div class="banner-content">
@@ -167,7 +167,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="banner banner-overlay banner-overlay-light">
                             <a href="#">
-                                <img src="assets/images/demos/demo-4/banners/banner-2.jpg" alt="Banner">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/banners/banner-2.jpg" alt="Banner">
                             </a>
 
                             <div class="banner-content">
@@ -181,7 +181,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="banner banner-overlay banner-overlay-light">
                             <a href="#">
-                                <img src="assets/images/demos/demo-4/banners/banner-3.png" alt="Banner">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/banners/banner-3.png" alt="Banner">
                             </a>
 
                             <div class="banner-content">
@@ -256,7 +256,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -289,7 +289,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -323,7 +323,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -364,7 +364,7 @@
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -405,7 +405,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -439,7 +439,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -499,7 +499,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -538,7 +538,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -573,7 +573,7 @@
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -614,7 +614,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -648,7 +648,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -708,7 +708,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -742,7 +742,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -776,7 +776,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -815,7 +815,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -850,7 +850,7 @@
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -917,7 +917,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -950,7 +950,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -984,7 +984,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1024,7 +1024,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1058,7 +1058,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1093,7 +1093,7 @@
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1161,7 +1161,7 @@
                                     <span class="product-label label-circle label-top">Top</span>
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1202,7 +1202,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1235,7 +1235,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1269,7 +1269,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1335,7 +1335,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1369,7 +1369,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1403,7 +1403,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-top">Top</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1436,7 +1436,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1470,7 +1470,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1513,8 +1513,8 @@
             <div class="mb-6"></div><!-- End .mb-6 -->
 
             <div class="container">
-                <div class="cta cta-border mb-5" style="background-image: url(assets/images/demos/demo-4/bg-1.jpg);">
-                    <img src="assets/images/demos/demo-4/camera.png" alt="camera" class="cta-img">
+                <div class="cta cta-border mb-5" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/bg-1.jpg);">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/camera.png" alt="camera" class="cta-img">
                     <div class="row justify-content-center">
                         <div class="col-md-12">
                             <div class="cta-content">
@@ -1536,7 +1536,7 @@
 
                 <div class="row">
                     <div class="col-lg-6 deal-col">
-                        <div class="deal" style="background-image: url('assets/images/demos/demo-4/deal/bg-1.jpg');">
+                        <div class="deal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/deal/bg-1.jpg');">
                             <div class="deal-top">
                                 <h2>Deal of the Day.</h2>
                                 <h4>Limited quantities. </h4>
@@ -1560,7 +1560,7 @@
                     </div><!-- End .col-lg-6 -->
 
                     <div class="col-lg-6 deal-col">
-                        <div class="deal" style="background-image: url('assets/images/demos/demo-4/deal/bg-2.jpg');">
+                        <div class="deal" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/deal/bg-2.jpg');">
                             <div class="deal-top">
                                 <h2>Your Exclusive Offers.</h2>
                                 <h4>Sign in to see amazing deals.</h4>
@@ -1615,27 +1615,27 @@
                         }
                     }'>
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/1.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/1.png" alt="Brand Name">
                     </a>
 
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/2.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/2.png" alt="Brand Name">
                     </a>
 
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/3.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/3.png" alt="Brand Name">
                     </a>
 
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/4.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/4.png" alt="Brand Name">
                     </a>
 
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/5.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/5.png" alt="Brand Name">
                     </a>
 
                     <a href="#" class="brand">
-                        <img src="assets/images/brands/6.png" alt="Brand Name">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brands/6.png" alt="Brand Name">
                     </a>
                 </div><!-- End .owl-carousel -->
             </div><!-- End .container -->
@@ -1666,7 +1666,7 @@
                         <div class="col-xl-5col d-none d-xl-block">
                             <div class="banner">
                                 <a href="#">
-                                    <img src="assets/images/demos/demo-4/banners/banner-4.jpg" alt="banner">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/banners/banner-4.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
                         </div><!-- End .col-xl-5col -->
@@ -1699,7 +1699,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-6.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-6.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1738,7 +1738,7 @@
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-7.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-7.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1772,7 +1772,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-8.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-8.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1813,7 +1813,7 @@
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <span class="product-label label-circle label-sale">Sale</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-9.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-9.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1848,7 +1848,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1911,7 +1911,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1950,7 +1950,7 @@
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-2.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -1985,7 +1985,7 @@
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <span class="product-label label-circle label-sale">Sale</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-4.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2026,7 +2026,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-5.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2060,7 +2060,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-1.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2117,7 +2117,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-8.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-8.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2157,7 +2157,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-top">Top</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-6.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-6.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2196,7 +2196,7 @@
                                         <div class="product product-2">
                                             <figure class="product-media">
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-7.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-7.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2230,7 +2230,7 @@
                                             <figure class="product-media">
                                                 <span class="product-label label-circle label-new">New</span>
                                                 <a href="product.html">
-                                                    <img src="assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
+                                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-3.jpg" alt="Product image" class="product-image">
                                                 </a>
 
                                                 <div class="product-action-vertical">
@@ -2293,7 +2293,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-10.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-10.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2337,7 +2337,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-11.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-11.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2373,8 +2373,8 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-12.jpg" alt="Product image" class="product-image">
-                                        <img src="assets/images/demos/demo-4/products/product-12-2.jpg" alt="Product image" class="product-image-hover">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-12.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-12-2.jpg" alt="Product image" class="product-image-hover">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2415,7 +2415,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-13.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-13.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2451,7 +2451,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-14.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-14.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2486,7 +2486,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-15.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-15.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2528,7 +2528,7 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-sale">Sale</span>
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-16.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-16.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -2572,7 +2572,7 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="assets/images/demos/demo-4/products/product-17.jpg" alt="Product image" class="product-image">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/products/product-17.jpg" alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">

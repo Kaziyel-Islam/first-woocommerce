@@ -25,7 +25,7 @@
 	            	<div class="row">
 	            		<div class="col-sm-6 col-lg-3">
 	            			<div class="widget widget-about">
-	            				<img src="assets/images/demos/demo-4/logo-footer.png" class="footer-logo" alt="Footer Logo" width="105" height="25">
+	            				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/logo-footer.png" class="footer-logo" alt="Footer Logo" width="105" height="25">
 	            				<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
 
 	            				<div class="widget-call">
@@ -434,7 +434,7 @@
                         </div>
                     </div>
                     <div class="col-xl-2-5col col-lg-5 ">
-                        <img src="assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
                     </div>
                 </div>
             </div>
@@ -443,19 +443,19 @@
 
     
     <!-- Plugins JS File -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.hoverIntent.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/superfish.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/bootstrap-input-spinner.js"></script>
-    <script src="assets/js/jquery.plugin.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.waypoints.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/superfish.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap-input-spinner.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.plugin.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.countdown.min.js"></script>
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/demos/demo-4.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/demos/demo-4.js"></script>
 
     <?php wp_footer(); ?>
 
