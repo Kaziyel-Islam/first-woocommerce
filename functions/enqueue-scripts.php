@@ -7,6 +7,9 @@ function register_styles(){
 
     wp_enqueue_style('line-awesome-min', get_template_directory_uri() . '/assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css');
 
+    // Font Awesome
+    wp_enqueue_style('font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css', array(), '7.0.0');
+
 
     wp_enqueue_style('bootstrap-min', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
 
