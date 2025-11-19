@@ -15,23 +15,32 @@
                             }
                         }
                     }'>
-                    <div class="intro-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/slider/slide-1.png);">
+
+                    <?php $hm_intro_sliders = get_field('intro_section');
+
+                    if(!empty($hm_intro_sliders)):
+
+                     foreach($hm_intro_sliders as $slider):
+                    
+                    ?>
+
+
+                    <div class="intro-slide" style="background-image: url(<?php echo esc_url($slider['intro_image']['url']) ?>)">
                         <div class="container intro-content">
                             <div class="row justify-content-end">
                                 <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <h3 class="intro-subtitle text-third">Deals and Promotions</h3><!-- End .h3 intro-subtitle -->
-                                    <h1 class="intro-title">Beats by</h1>
-                                    <h1 class="intro-title">Dre Studio 3</h1><!-- End .intro-title -->
-
+                                    <h3 class="intro-subtitle text-third"><?php echo esc_html($slider['intro_subtitle']) ?></h3><!-- End .h3 intro-subtitle -->
+                                    <h1 class="intro-title"><?php echo wp_kses_post($slider['intro__title']) ?></h1>
+                                    
                                     <div class="intro-price">
-                                        <sup class="intro-old-price">$349,95</sup>
+                                        <sup class="intro-old-price"><?php echo esc_html($slider['intro_old_price']) ?></sup>
                                         <span class="text-third">
-                                            $279<sup>.99</sup>
+                                            <?php echo esc_html($slider['intro_discount_price']) ?><sup><?php echo esc_html($slider['intro_discount_price_sup']) ?></sup>
                                         </span>
                                     </div><!-- End .intro-price -->
 
-                                    <a href="category.html" class="btn btn-primary btn-round">
-                                        <span>Shop More</span>
+                                    <a href="<?php echo esc_url($slider['intro_button_url']) ?>" class="btn btn-primary btn-round">
+                                        <span><?php echo esc_html($slider['intro_button']) ?></span>
                                         <i class="icon-long-arrow-right"></i>
                                     </a>
                                 </div><!-- End .col-lg-11 offset-lg-1 -->
@@ -39,109 +48,50 @@
                         </div><!-- End .intro-content -->
                     </div><!-- End .intro-slide -->
 
-                    <div class="intro-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/slider/slide-2.png);">
-                        <div class="container intro-content">
-                            <div class="row justify-content-end">
-                                <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                    <h3 class="intro-subtitle text-primary">New Arrival</h3><!-- End .h3 intro-subtitle -->
-                                    <h1 class="intro-title">Apple iPad Pro <br>12.9 Inch, 64GB </h1><!-- End .intro-title -->
+                    <?php
+                     endforeach;
+                    endif;
+                    
+                    ?>
+                </div>
 
-                                    <div class="intro-price">
-                                        <sup>Today:</sup>
-                                        <span class="text-primary">
-                                            $999<sup>.99</sup>
-                                        </span>
-                                    </div><!-- End .intro-price -->
-
-                                    <a href="category.html" class="btn btn-primary btn-round">
-                                        <span>Shop More</span>
-                                        <i class="icon-long-arrow-right"></i>
-                                    </a>
-                                </div><!-- End .col-md-6 offset-md-6 -->
-                            </div><!-- End .row -->
-                        </div><!-- End .intro-content -->
-                    </div><!-- End .intro-slide -->
-                </div><!-- End .intro-slider owl-carousel owl-simple -->
-
-                <span class="slider-loader"></span><!-- End .slider-loader -->
+                
             </div><!-- End .intro-slider-container -->
+            <span class="slider-loader"></span><!-- End .slider-loader -->
 
             <div class="container">
                 <h2 class="title text-center mb-4">Explore Popular Categories</h2><!-- End .title text-center -->
                 
+                
                 <div class="cat-blocks-container">
                     <div class="row">
+                        <?php $popular_categories = get_field('popular_categories');
+
+                            if( $popular_categories ):
+                                foreach( $popular_categories as $pcat_id ):
+
+                                    // Get full term info
+                                    $pcat = get_term( $pcat_id, 'product_cat' );
+
+                                    // Get WooCommerce category image
+                                    $thumbnail_id = get_term_meta( $pcat_id, 'thumbnail_id', true );
+                                    $pcat_image_url = wp_get_attachment_url( $thumbnail_id );
+                                    $pcat_url = get_term_link( $pcat_id, 'product_cat' );
+                        ?>
                         <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
+                            <a href="<?php echo esc_url( $pcat_url ); ?>" class="cat-block">
                                 <figure>
                                     <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/1.png" alt="Category image">
+                                        <img src="<?php echo esc_url( $pcat_image_url ); ?>" alt="Category image">
                                     </span>
                                 </figure>
 
-                                <h3 class="cat-block-title">Computer & Laptop</h3><!-- End .cat-block-title -->
+                                <h3 class="cat-block-title"><?php echo esc_html( $pcat->name ); ?></h3><!-- End .cat-block-title -->
                             </a>
                         </div><!-- End .col-sm-4 col-lg-2 -->
 
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
-                                <figure>
-                                    <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/2.png" alt="Category image">
-                                    </span>
-                                </figure>
+                        <?php endforeach; endif; ?>
 
-                                <h3 class="cat-block-title">Digital Cameras</h3><!-- End .cat-block-title -->
-                            </a>
-                        </div><!-- End .col-sm-4 col-lg-2 -->
-
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
-                                <figure>
-                                    <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/3.png" alt="Category image">
-                                    </span>
-                                </figure>
-
-                                <h3 class="cat-block-title">Smart Phones</h3><!-- End .cat-block-title -->
-                            </a>
-                        </div><!-- End .col-sm-4 col-lg-2 -->
-
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
-                                <figure>
-                                    <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/4.png" alt="Category image">
-                                    </span>
-                                </figure>
-
-                                <h3 class="cat-block-title">Televisions</h3><!-- End .cat-block-title -->
-                            </a>
-                        </div><!-- End .col-sm-4 col-lg-2 -->
-
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
-                                <figure>
-                                    <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/5.png" alt="Category image">
-                                    </span>
-                                </figure>
-
-                                <h3 class="cat-block-title">Audio</h3><!-- End .cat-block-title -->
-                            </a>
-                        </div><!-- End .col-sm-4 col-lg-2 -->
-
-                        <div class="col-6 col-sm-4 col-lg-2">
-                            <a href="category.html" class="cat-block">
-                                <figure>
-                                    <span>
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demos/demo-4/cats/6.png" alt="Category image">
-                                    </span>
-                                </figure>
-
-                                <h3 class="cat-block-title">Smart Watches</h3><!-- End .cat-block-title -->
-                            </a>
-                        </div><!-- End .col-sm-4 col-lg-2 -->
                     </div><!-- End .row -->
                 </div><!-- End .cat-blocks-container -->
             </div><!-- End .container -->
