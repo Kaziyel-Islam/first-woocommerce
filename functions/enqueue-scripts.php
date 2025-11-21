@@ -59,6 +59,12 @@ function register_scripts(){
 
     wp_enqueue_script('demo-4-js', get_template_directory_uri() . "/assets/js/demos/demo-4.js", array('jquery'), '1.0', true);
 
+    wp_enqueue_script('woo-filter-js', get_template_directory_uri() . "/assets/js/woo-filter.js", array('jquery'), '1.0', true);
+
+     wp_localize_script('woo-filter-js', 'ajax_object', [
+        'ajax_url' => admin_url('admin-ajax.php')
+    ]);
+
 
 }
 

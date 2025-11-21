@@ -22,9 +22,9 @@ if ( $product->is_type( 'simple' ) ) {
 }
 ?>
 
+<div class="col-6 col-md-4 col-lg-4">
 
-
-<li class="product product-7 text-center">
+ <div class="product product-7 text-center">
 
     
         <figure class="product-media">
@@ -86,4 +86,7 @@ if ( $product->is_type( 'simple' ) ) {
         </div><!-- End .product-body -->
   
 
-</li>
+</div>
+
+</div>
+

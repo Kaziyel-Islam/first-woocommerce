@@ -9,3 +9,15 @@ Version: 1.0.0
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 Text Domain: ninewoo
 */
+
+
+
+ul.products.columns-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products.mb-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
