@@ -186,50 +186,33 @@
 									    </a>
 									</h3><!-- End .widget-title -->
 
+									<?php
+
+										$size_terms = get_terms([
+											'taxonomy' => 'pa_size',
+											'hide_empty' => false
+										]);
+									?>
+
 									<div class="collapse show" id="widget-2">
 										<div class="widget-body">
 											<div class="filter-items">
-												<div class="filter-item">
-													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" id="size-1">
-														<label class="custom-control-label" for="size-1">XS</label>
-													</div><!-- End .custom-checkbox -->
-												</div><!-- End .filter-item -->
+
+												<?php foreach ($size_terms as $term): ?>
 
 												<div class="filter-item">
 													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" id="size-2">
-														<label class="custom-control-label" for="size-2">S</label>
+														<input type="checkbox" class="custom-control-input wc-size-filter" 
+														 id="size-<?php echo $term->term_id; ?>"
+														 data-size="<?php echo $term->term_id; ?>">
+														<label class="custom-control-label" for="size-<?php echo $term->term_id; ?>">
+														 <?php echo $term->name; ?>
+														 </label>
 													</div><!-- End .custom-checkbox -->
 												</div><!-- End .filter-item -->
 
-												<div class="filter-item">
-													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" checked id="size-3">
-														<label class="custom-control-label" for="size-3">M</label>
-													</div><!-- End .custom-checkbox -->
-												</div><!-- End .filter-item -->
-
-												<div class="filter-item">
-													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" checked id="size-4">
-														<label class="custom-control-label" for="size-4">L</label>
-													</div><!-- End .custom-checkbox -->
-												</div><!-- End .filter-item -->
-
-												<div class="filter-item">
-													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" id="size-5">
-														<label class="custom-control-label" for="size-5">XL</label>
-													</div><!-- End .custom-checkbox -->
-												</div><!-- End .filter-item -->
-
-												<div class="filter-item">
-													<div class="custom-control custom-checkbox">
-														<input type="checkbox" class="custom-control-input" id="size-6">
-														<label class="custom-control-label" for="size-6">XXL</label>
-													</div><!-- End .custom-checkbox -->
-												</div><!-- End .filter-item -->
+												<?php endforeach; ?>
+												
 											</div><!-- End .filter-items -->
 										</div><!-- End .widget-body -->
 									</div><!-- End .collapse -->

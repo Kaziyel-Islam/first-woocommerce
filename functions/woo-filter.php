@@ -1,31 +1,41 @@
-
-
 <?php
 
-function ajax_filter_products_by_category() {
+function ajax_filter_products() {
 
     $categories = $_POST['categories'];
+    $sizes = $_POST['sizes'];
 
-    $args = [
-        'post_type' => 'product',
-        'posts_per_page' => -1
-    ];
+    $tax_query = [];
 
-    // If it's NOT "all", then filter by category
+    // Category filter
     if ($categories !== 'all') {
-        $args['tax_query'] = [
-            [
-                'taxonomy' => 'product_cat',
-                'field'    => 'term_id',
-                'terms'    => $categories
-            ]
+        $tax_query[] = [
+            'taxonomy' => 'product_cat',
+            'field'    => 'term_id',
+            'terms'    => $categories
         ];
     }
 
+    // Size filter
+    if (!empty($sizes)) {
+        $tax_query[] = [
+            'taxonomy' => 'pa_size',
+            'field'    => 'term_id',
+            'terms'    => $sizes
+        ];
+    }
+
+    // Build final query
+    $args = [
+        'post_type' => 'product',
+        'posts_per_page' => -1,
+        'tax_query' => $tax_query
+    ];
+
     $products = new WP_Query($args);
 
-    if($products->have_posts()) {
-        while($products->have_posts()) {
+    if ($products->have_posts()) {
+        while ($products->have_posts()) {
             $products->the_post();
             wc_get_template_part('content', 'product');
         }
@@ -37,5 +47,5 @@ function ajax_filter_products_by_category() {
     wp_die();
 }
 
-add_action('wp_ajax_filter_products_by_category', 'ajax_filter_products_by_category');
-add_action('wp_ajax_nopriv_filter_products_by_category', 'ajax_filter_products_by_category');
+add_action('wp_ajax_filter_products', 'ajax_filter_products');
+add_action('wp_ajax_nopriv_filter_products', 'ajax_filter_products');

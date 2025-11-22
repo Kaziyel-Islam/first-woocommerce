@@ -1,42 +1,33 @@
-
-
 jQuery(function($){
 
-    $('.wc-cat-filter').on('change', function(){
-
-        let clickedCat = $(this).data('cat');
-
-        // If "All" is checked
-        if(clickedCat === 'all') {
-            // Uncheck all other categories
-            $('.wc-cat-filter').not(this).prop('checked', false);
-        } else {
-            // If ANY category is checked, uncheck "All"
-            $('#cat-all').prop('checked', false);
-        }
+    function runAjaxFilter() {
 
         // Collect selected categories
         let selectedCats = [];
-
         $('.wc-cat-filter:checked').each(function(){
-            let catID = $(this).data('cat');
-            if(catID !== 'all') {
-                selectedCats.push(catID);
+            let cat = $(this).data('cat');
+            if(cat !== 'all') {
+                selectedCats.push(cat);
             }
         });
 
-        // If nothing selected, we treat as "All"
         if(selectedCats.length === 0) {
             selectedCats = 'all';
         }
 
-        // AJAX Request
+        // Collect selected sizes
+        let selectedSizes = [];
+        $('.wc-size-filter:checked').each(function(){
+            selectedSizes.push($(this).data('size'));
+        });
+
         $.ajax({
             url: ajax_object.ajax_url,
             type: "POST",
             data: {
-                action: "filter_products_by_category",
-                categories: selectedCats
+                action: "filter_products",
+                categories: selectedCats,
+                sizes: selectedSizes
             },
             beforeSend: function() {
                 $('.products').css('opacity', '0.4');
@@ -46,7 +37,24 @@ jQuery(function($){
                 $('.products').css('opacity', '1');
             }
         });
+    }
 
+    // Category change
+    $('.wc-cat-filter').on('change', function(){
+        let clickedCat = $(this).data('cat');
+
+        if(clickedCat === 'all') {
+            $('.wc-cat-filter').not(this).prop('checked', false);
+        } else {
+            $('#cat-all').prop('checked', false);
+        }
+
+        runAjaxFilter();
+    });
+
+    // Size change
+    $('.wc-size-filter').on('change', function(){
+        runAjaxFilter();
     });
 
 });
